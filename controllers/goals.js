@@ -10,6 +10,13 @@ router.post('/', (req, res) => {
   });
 });
 
+// index route
+router.get('/', (req, res) => {
+  Goals.find({}, (err, foundGoals) => {
+    res.json(foundGoals);
+  });
+});
+
 // delete route
 router.delete('/:id', (req, res) => {
   Goals.findByIdAndRemove(req.params.id, (err, deletedGoal) => {
@@ -17,9 +24,6 @@ router.delete('/:id', (req, res) => {
   });
 });
 
-// index route
-router.get('/', (req, res) => {
-  res.send('index');
-});
+
 
 module.exports = router;
