@@ -36,6 +36,9 @@ app.use(express.json());
 
 app.use(methodOverride('_method'));
 
+const goalsController = require('./controllers/goals.js');
+app.use('/goals', goalsController);
+
 // =======================================
 //               ROUTES
 // =======================================
