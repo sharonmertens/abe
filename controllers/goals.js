@@ -24,6 +24,12 @@ router.delete('/:id', (req, res) => {
   });
 });
 
+// update route
+router.put('/:id', (req, res) => {
+  Goals.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedGoal) => {
+    res.json(updatedGoal);
+  });
+});
 
 
 module.exports = router;
