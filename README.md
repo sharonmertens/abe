@@ -28,3 +28,6 @@ accountability back end
 - Index Route
 - Delete Route
 - Update Route
+
+##### Resources
+[Installing and Initializing CORS](https://www.npmjs.com/package/cors)
