@@ -37,8 +37,8 @@ app.use(cors());
 
 app.use(methodOverride('_method'));
 
-const goalsController = require('./controllers/goals.js');
-app.use('/goals', goalsController);
+const recipesController = require('./controllers/recipes.js');
+app.use('/recipes', recipesController);
 
 // =======================================
 //               ROUTES
