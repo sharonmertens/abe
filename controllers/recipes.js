@@ -17,6 +17,13 @@ router.get('/', (req, res) => {
   });
 });
 
+// show route
+router.get('/:id', (req, res) => {
+  Recipes.findById(req.params.id, (err, foundRecipe) => {
+    res.json(foundRecipe);
+  });
+});
+
 // delete route
 router.delete('/:id', (req, res) => {
   Recipes.findByIdAndRemove(req.params.id, (err, deletedRecipe) => {
