@@ -1,13 +1,13 @@
 # abe
-accountability back end
+recipes back end
 
 ### User Stories
 
-- As a user, I can see all my goals
-- As a user, I can one goal
-- As a user, I can create a goal
-- As a user, I can edit a goal
-- As a user, I can delete a goal
+- As a user, I can see all my recipes
+- As a user, I can one recipe
+- As a user, I can create a recipe
+- As a user, I can edit a recipe
+- As a user, I can delete a recipe
 
 ### Process
 
@@ -17,12 +17,12 @@ accountability back end
 3. ```touch server.js```
 4. ```npm install express```
 ##### Set Up Express Server
-##### Set Up Goal Controller
+##### Set Up Recipe Controller
 ##### Initialize Mongoose
 - ```npm install mongoose```
-##### Create Goal Model
+##### Create Recipe Model
 1. ```mkdir models```
-2. ```touch models/goals.js```
+2. ```touch models/recipes.js```
 ##### Create Routes
 - Create Route
 - Index Route
