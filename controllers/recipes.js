@@ -33,7 +33,9 @@ router.delete('/:id', (req, res) => {
 
 // update route
 router.put('/:id', (req, res) => {
+  console.log(req.body)
   Recipes.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedRecipe) => {
+    console.log(err);
     res.json(updatedRecipe);
   });
 });
