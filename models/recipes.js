@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const recipeSchema = new mongoose.Schema({
   name: String,
   ingredients: String,
-  directions: String
+  directions: String,
+  image: String
 });
 
 const Recipes = mongoose.model('Recipe', recipeSchema);
